@@ -3,7 +3,22 @@
     <style name="Base.Theme.MySec" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name = "colorPrimary">@color/dark_gray</item>
     </style>
 
     <style name="Theme.MySec" parent="Base.Theme.MySec" />
+
+    <style name="TextViewStyle" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/night_background</item>
+        <item name="android:background">@color/trans</item>
+    </style>
+
+    <style name="LightColorTextViewStyle" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:background">@color/trans</item>
+    </style>
+
+    <style name="LineView">
+        <item name="android:background">@color/night_background</item>
+    </style>
 </resources>
