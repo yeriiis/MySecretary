@@ -13,6 +13,10 @@
     <color name="light_background">#FFFFFFFF</color>
     <color name="night_background">#222222</color>
 
-    <color name="light_grey">#E9E9E9</color>
+    <color name="light_grey">#FFE9E9E9</color>
+    <color name="light_green">#5FA37A</color>
+    <color name="g1">#80ADADAD</color>
+    <color name="g2">#F2F2F2</color>
+    <color name="g3">#B3B3B3</color>
 
 </resources>

@@ -1,6 +1,7 @@
 package com.example.mysec
 
 import android.os.Bundle
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
@@ -47,7 +48,6 @@ class MainActivity : AppCompatActivity() {
         actionView?.setOnClickListener {
             onOptionsItemSelected(myPageMenuItem ?: return@setOnClickListener)
         }
-
         return true
     }
 
@@ -59,8 +59,8 @@ class MainActivity : AppCompatActivity() {
                 Toolbar.LayoutParams.WRAP_CONTENT,
                 Toolbar.LayoutParams.WRAP_CONTENT
             )
-            gravity = android.view.Gravity.CENTER
-            setPadding(10, 10, 10, 10)
+            gravity = Gravity.CENTER
+            setPadding(30, 10, 30, 10)
         }
 
         // ImageView 생성 및 설정
@@ -68,16 +68,8 @@ class MainActivity : AppCompatActivity() {
             setImageResource(R.drawable.mypage) // 아이콘 리소스 설정
         }
 
-        // TextView 생성 및 설정
-        val textView = TextView(this).apply {
-            text = "마이페이지"
-            textSize = 12f
-            setTextColor(resources.getColor(android.R.color.black, null))
-        }
-
-        // LinearLayout에 ImageView와 TextView 추가
+        // LinearLayout에 ImageView 추가
         linearLayout.addView(imageView)
-        linearLayout.addView(textView)
 
         return linearLayout
     }

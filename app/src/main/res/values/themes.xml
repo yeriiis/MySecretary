@@ -4,9 +4,22 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name = "colorPrimary">@color/dark_gray</item>
+        <item name = "android:backgroundTint">@color/white</item>
     </style>
 
     <style name="Theme.MySec" parent="Base.Theme.MySec" />
+
+    <style name="month">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/pb</item>
+    </style>
+
+    <style name="text">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#A6A6A6</item>
+        <item name="android:fontFamily">@font/pr</item>
+    </style>
 
     <style name="TextViewStyle" parent="@style/Widget.AppCompat.TextView">
         <item name="android:textColor">@color/night_background</item>
@@ -20,5 +33,10 @@
 
     <style name="LineView">
         <item name="android:background">@color/night_background</item>
+    </style>
+
+    <style name="NoSelectionBottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="itemIconTint">@android:color/transparent</item>
+        <item name="itemTextColor">@android:color/transparent</item>
     </style>
 </resources>

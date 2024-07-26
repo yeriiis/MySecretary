@@ -62,14 +62,14 @@ class CalendarAdapter(
             val currentDate = SimpleDateFormat("dd", Locale.KOREA).format(date).toIntOrNull() ?: 0
             if (data == currentDate) {
                 itemCalendarDateText.setTypeface(itemCalendarDateText.typeface, Typeface.BOLD)
+                itemCalendarDateText.setTextColor(context.getColor(R.color.light_green))
             } else {
                 itemCalendarDateText.setTypeface(itemCalendarDateText.typeface, Typeface.NORMAL)
-            }
-
-            if (position < firstDateIndex || position > lastDateIndex) {
-                itemCalendarDateText.setTextColor(context.getColor(R.color.light_gray))
-            } else {
-                itemCalendarDateText.setTextColor(context.getColor(R.color.black))
+                if (position < firstDateIndex || position > lastDateIndex) {
+                    itemCalendarDateText.setTextColor(context.getColor(R.color.light_gray))
+                } else {
+                    itemCalendarDateText.setTextColor(context.getColor(R.color.black))
+                }
             }
         }
     }

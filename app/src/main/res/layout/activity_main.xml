@@ -15,6 +15,9 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_height="?attr/actionBarSize"
             app:logo="@drawable/logo"
             app:menu="@menu/top_navi_menu" />
@@ -35,12 +38,14 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_view"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
+        android:paddingTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_navi_menu"
-        app:labelVisibilityMode="labeled"
-        app:itemTextColor="@color/black"/>
+        app:itemIconTint="#B3B3B3"
+        app:backgroundTint="@color/white"
+        style="@style/NoSelectionBottomNavigationView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
